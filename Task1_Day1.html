@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <h1>
+             The First Assignment ::) 
+        </h1>
+    </head>
+    <body>
+        <p> Task1 </p>
+        <script>
+            var days = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'];
+            var today = new Date();
+            var dd = today.getDate();
+            var day = days[today.getDay()];
+            var curr_hour = today.getHours();
+            var curr_min  = today.getMinutes();
+            var curr_sec  = today.getSeconds();
+            var mid = (curr_hour >= 12) ? 'PM' : 'AM'
+            document.write('Today is : ' + day + '<br>'); //10 PM : 30 : 38
+            document.write('Current Time is : ', curr_hour , ' ', mid , ' : ' , curr_min , ' : ' , curr_sec);
+        </script>
+    </body>
+</html>
