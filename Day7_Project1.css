@@ -1,0 +1,21 @@
+*margin{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#text{
+    padding: 30px;
+    background-color: wheat;
+    max-height: 200px;
+    overflow: hidden;
+
+    /* To have an animation. We can use this */
+    transition: max-height 1s;
+}
+
+#text.show{
+    max-height: 1500px;
+
+    transition : max-height 1s;
+}
